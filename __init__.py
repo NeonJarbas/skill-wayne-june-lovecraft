@@ -11,9 +11,9 @@ class WayneJuneLovecraftReadingsSkill(OVOSCommonPlaybackSkill):
         self.supported_media = [MediaType.AUDIOBOOK,
                                 MediaType.VISUAL_STORY,
                                 MediaType.VIDEO]
-        self.default_image = join(dirname(__file__), "ui", "wayne_june.png")
-        self.skill_icon = join(dirname(__file__), "ui", "icon.png")
-        self.default_bg = join(dirname(__file__), "ui", "bg.jpeg")
+        self.default_image = join(dirname(__file__), "res", "wayne_june.png")
+        self.skill_icon = join(dirname(__file__), "res", "icon.png")
+        self.default_bg = join(dirname(__file__), "res", "bg.jpeg")
         self.db = JsonStorage(join(dirname(__file__), "res", "waynejune.json"))
         super().__init__(*args, **kwargs)
 
